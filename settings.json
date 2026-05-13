@@ -1,1 +1,82 @@
+{
+  "/* --- UI & Workbench (Low Resource Mode) --- */": "",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.secondarySideBar.defaultVisibility": "visible",
+  "workbench.colorTheme": "GitHub Dark Default",
+  "explorer.confirmDelete": false,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "visible",
+  "editor.scrollbar.horizontal": "hidden",
+  "workbench.tips.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.guides.indentation": false,
+  "editor.renderWhitespace": "none",
 
+  "/* --- Browser & Integration (Floorp Native) --- */": "",
+  "workbench.externalBrowser": "/usr/bin/floorp",
+  "liveServer.settings.CustomBrowser": "Null",
+  "liveServer.settings.donotShowInfoMsg": true,
+
+  "/* --- RAM/CPU Guard & Performance --- */": "",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/.cache/**": true,
+  },
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false,
+  },
+  "editor.suggest.snippetsPreventQuickSuggestions": false,
+  "search.followSymlinks": false,
+  "git.autorefresh": false,
+
+  "/* --- Antigravity (Kilo-code) Agent Optimization --- */": "",
+  "chat.viewSessions.orientation": "stacked",
+  "chat.mcp.assisted.nuget.enabled": true,
+  "chat.mcp.gallery.enabled": true,
+  "antigravity.ai.streamResponsiveness": 0.5,
+  "antigravity.agent.autoBrowserExecution": "manual",
+  "antigravity.browser.executablePath": "/usr/bin/floorp",
+  "antigravity.agent.telemetry.enabled": false,
+
+  "/* --- Professional Debugging & Floorp --- */": "",
+  "debug.javascript.defaultRuntimeExecutable": {
+    
+    "pwa-node": "node",
+    "pwa-chrome": "/usr/bin/floorp",
+  },
+  "debug.javascript.browserLaunchLocation": "workspace",
+  "debug.internalConsoleOptions": "neverOpen",
+  "debug.openDebug": "neverOpen",
+
+  "/* --- High-Speed Terminal (XFCE Tuned) --- */": "",
+  "terminal.integrated.gpuAcceleration": "on",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.drawBoldTextInBrightColors": false,
+  "terminal.integrated.copyOnSelection": true,
+
+  "/* --- Formatting & Logic --- */": "",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.autoSave": "onFocusChange",
+  "window.titleBarStyle": "custom",
+
+  "/* --- Language Strictness --- */": "",
+  "[html]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "vscode.html-language-features",
+  },
+  "[javascript]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+    },
+  },
+}
