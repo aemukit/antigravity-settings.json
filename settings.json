@@ -25,7 +25,7 @@
   "git.autorefresh": false,
   "git.enableSmartCommit": true,
 
-  "/* --- [2] PRODUCT-BUILDER HUD (Visual Sharpness) --- */": "",
+  "/* --- [2] PRODUCT-BUILDER HUD (Visual Sharpness & Usability) --- */": "",
   "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Menlo', 'Monaco', monospace",
   "editor.fontWeight": "500",
   "editor.fontSize": 13,
@@ -33,10 +33,12 @@
   "editor.letterSpacing": 0.4,
   "editor.fontLigatures": true,
   "workbench.fontAliasing": "antialiased",
-  "workbench.activityBar.location": "hidden",
+  
+  "workbench.activityBar.location": "default",
+  "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
-  "workbench.layoutControl.enabled": false,
-  "breadcrumbs.enabled": false,
+  "workbench.layoutControl.enabled": true,
+  "breadcrumbs.enabled": true,
   "window.menuBarVisibility": "compact",
   "window.titleBarStyle": "custom",
 
