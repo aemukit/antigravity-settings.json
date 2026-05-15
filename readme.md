@@ -1,42 +1,41 @@
-# TECHNICAL CONFIGURATION: AGENTIC IDE & HARDWARE OVERDRIVE
+# ANTIGRAVITY IDE: OPTIMIZED CUSTOM JSON
 
-This document provides a high-performance `settings.json` configuration and deployment blueprint for a 2026-standard agentic development environment optimized for speed, focus, low memory overhead, and autonomous workflow acceleration.
+## 1. What is this project?
+The **Antigravity IDE Configuration** is a high-performance optimization blueprint for the Antigravity fork of VS Code. It transforms the standard development environment into a "Zen-Speed" agentic powerhouse. It is designed to minimize system resource consumption (RAM/CPU) while maximizing the capabilities of AI-driven coding agents.
 
----
+## 2. What it solves
+*   **Bloatware Fatigue:** Eliminates unnecessary UI rendering, background telemetry, and redundant decorations.
+*   **Latency Spikes:** Offloads rendering to the GPU and simplifies the UI stack for an instant-response feel.
+*   **Context Fragmentation:** Configures deep-indexing for agents, allowing them to understand your entire project instead of single files.
+*   **Maintenance Overhead:** Automates code hygiene (linting, formatting, imports) at the moment of saving.
 
-# 1. DEPLOYMENT INSTRUCTIONS
+## 3. Setup Instructions
 
-To apply this configuration correctly, follow the sequence below carefully.
+### Linux
+1. Open terminal and navigate to your VS Code config directory: `~/.config/Antigravity/User/`.
+2. Open `settings.json`.
+3. Paste the configuration provided below and save.
 
-## 1.1 Open Command Palette
-Press:
+### macOS
+1. Open VS Code.
+2. Press `Cmd + Shift + P` and search for "Open User Settings (JSON)".
+3. Paste the configuration and save.
 
-- **Windows/Linux:** `Ctrl + Shift + P`
-- **Mac:** `Cmd + Shift + P`
-
-## 1.2 Open JSON Settings
-Search for:
-
-```txt
-Preferences: Open User Settings (JSON)
-```
-
-Then select the command.
-
-## 1.3 Replace Existing Configuration
-Delete the entire current configuration inside your `settings.json` file and paste the configuration block below.
-
-## 1.4 Save & Initialize
-Press:
-
-- `Ctrl + S`
-- or `Cmd + S`
-
-The environment will apply changes instantly without requiring a restart.
+### Windows
+1. Open VS Code.
+2. Press `Ctrl + Shift + P` and search for "Open User Settings (JSON)".
+3. Paste the configuration and save.
 
 ---
 
-# 2. SETTINGS.JSON
+## 4. What makes it special?
+*   **Hardware Overdrive:** Strips the IDE down to the bare essentials for extreme speed.
+*   **HUD-Style Efficiency:** Provides visible, clean UI elements (Activity Bar, Breadcrumbs) while disabling heavy animations and shadows.
+*   **Autonomous Logic:** The "Self-Healing" system ensures that code is always production-ready, minimizing the need for manual fixes.
+
+---
+
+## 5. The Configuration (settings.json)
 
 ```json
 {
@@ -66,7 +65,7 @@ The environment will apply changes instantly without requiring a restart.
   "git.autorefresh": false,
   "git.enableSmartCommit": true,
 
-  "/* --- [2] PRODUCT-BUILDER HUD (Visual Sharpness) --- */": "",
+  "/* --- [2] PRODUCT-BUILDER HUD (Visual Sharpness & Usability) --- */": "",
   "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Menlo', 'Monaco', monospace",
   "editor.fontWeight": "500",
   "editor.fontSize": 13,
@@ -74,10 +73,11 @@ The environment will apply changes instantly without requiring a restart.
   "editor.letterSpacing": 0.4,
   "editor.fontLigatures": true,
   "workbench.fontAliasing": "antialiased",
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "default",
+  "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
-  "workbench.layoutControl.enabled": false,
-  "breadcrumbs.enabled": false,
+  "workbench.layoutControl.enabled": true,
+  "breadcrumbs.enabled": true,
   "window.menuBarVisibility": "compact",
   "window.titleBarStyle": "custom",
 
@@ -98,7 +98,7 @@ The environment will apply changes instantly without requiring a restart.
   "chat.mcp.assisted.nuget.enabled": true,
   "chat.mcp.gallery.enabled": true,
 
-  "/* --- [4] THE PRODUCTIVITY CORE --- */": "",
+  "/* --- [4] THE \"HIDDEN\" PRODUCTIVITY GEMS --- */": "",
   "editor.linkedEditing": true,
   "editor.suggest.insertMode": "replace",
   "editor.acceptSuggestionOnEnter": "on",
@@ -150,115 +150,26 @@ The environment will apply changes instantly without requiring a restart.
 
 ---
 
-# 3. PERFORMANCE AUDIT — BEFORE VS AFTER
-
-| Metric | Standard IDE | Agentic Optimized |
-|---|---|---|
-| UI Latency | Visible scroll lag & heavy rendering | GPU-accelerated minimal rendering |
-| Memory Ceiling | Unlimited tab accumulation | Strict 3-tab workflow |
-| Agent Context | Single-file awareness | Full project indexing depth |
-| Code Hygiene | Manual formatting & linting | Automated save-to-fix pipeline |
-| Workspace Focus | Visual clutter | HUD-style precision layout |
-| Navigation Speed | Multi-click workflows | Keyboard-first operations |
+## 6. Warnings & Browser Setup
+*   **Browser Requirement:** This config sets `workbench.externalBrowser` to `floorp`. If you do not have Floorp installed, your debug launch configurations may fail. Update the `"workbench.externalBrowser"` value to `"chrome"`, `"brave"`, or `"firefox"` if needed.
+*   **Extensions Warning:** The self-healing system relies on **ESLint** and **Prettier**. If these are not installed, the `editor.codeActionsOnSave` will do nothing.
+*   **Performance Note:** While this config is light, installing 50+ extensions will still consume memory. Keep the extension count lean.
 
 ---
 
-# 4. CRITICAL BROWSER OPTIMIZATION
-
-The default configuration uses the **Floorp Browser** for efficient debugging and lightweight execution.
-
-If you use another browser, replace this line:
-
-```json
-"workbench.externalBrowser": "floorp"
-```
-
-With one of the supported values below:
-
-| Browser | Value |
-|---|---|
-| Google Chrome | `"chrome"` |
-| Microsoft Edge | `"msedge"` |
-| Brave Browser | `"brave"` |
-| Firefox | `"firefox"` |
-
-> Ensure the browser executable is available in your operating system PATH for instant execution and reduced launch overhead.
+## 7. Productivity Tips
+*   **Command Palette:** Use `Ctrl/Cmd + Shift + P` for *everything*. It is faster than navigating menus.
+*   **Quick Jump:** Use `Ctrl/Cmd + P` to jump between files instantly.
+*   **Hide/Show:** Press `Ctrl/Cmd + B` to toggle the Activity Bar if you need to gain extra screen real estate for deep work.
+*   **Workspace Limit:** We limit open editors to 3. If you find this too restrictive, increase `"workbench.editor.limit.value"` in the config.
 
 ---
 
-# 5. ADVANCED PRODUCTIVITY FEATURES
-
-## 5.1 Autonomous Intelligence Layer
-The configuration enables large-context agent execution with deep indexing support, allowing the environment to understand relationships across the entire project instead of isolated files.
-
-## 5.2 Visual Ergonomics Engine
-The typography stack combines:
-
-- JetBrains Mono
-- Fira Code
-- Optimized spacing
-- Medium font weight
-- Compact rendering
-
-This creates a high-clarity development HUD designed for extended sessions exceeding 10 hours.
-
-## 5.3 Self-Healing Save System
-Every save action automatically triggers:
-
-- ESLint fixes
-- Import organization
-- Missing import injection
-- Prettier formatting
-
-This reduces maintenance overhead and keeps the codebase continuously production-ready.
-
-## 5.4 Zero-Bloat Runtime Strategy
-The configuration aggressively disables:
-
-- unnecessary rendering
-- background watchers
-- redundant UI overlays
-- excessive Git refresh cycles
-
-This dramatically improves responsiveness on lower-end hardware while preserving high-end scalability.
-
----
-
-# 6. POST-INSTALLATION CHECKLIST
-
-- [ ] Memorize `Ctrl + B` for Sidebar Toggle
-- [ ] Memorize `Ctrl + P` for Instant File Search
-- [ ] Install Prettier Extension
-- [ ] Install ESLint Extension
-- [ ] Enable Hardware Accelerated GPU Scheduling
-- [ ] Restart VS Code after initial configuration
-- [ ] Verify terminal GPU acceleration is functioning
-
----
-
-# 7. RECOMMENDED EXTENSIONS
-
-For maximum compatibility and workflow efficiency, install the following extensions:
-
-```txt
-ESLint
-Prettier - Code formatter
-GitHub Copilot
-Error Lens
-Pretty TypeScript Errors
-Path Intellisense
-Turbo Console Log
-```
-
----
-
-# 8. FINAL NOTES
-
-This configuration is designed around four principles:
-
-1. Maximum execution speed
-2. Minimal cognitive noise
-3. Autonomous maintenance
-4. Full-project AI awareness
-
-The objective is not aesthetics alone — it is sustained high-performance software production with reduced friction, reduced latency, and increased strategic focus.
+## 8. Required Extensions for Maximum Power
+To make this IDE fully functional, install these via the Extensions view:
+1. **ESLint:** Essential for the Self-Healing system.
+2. **Prettier - Code formatter:** Ensures consistent code style.
+3. **GitHub Copilot:** Recommended for agentic code completion.
+4. **Error Lens:** Makes errors immediately visible on the line.
+5. **Path Intellisense:** Drastically speeds up file path imports.
+6. **Turbo Console Log:** Instant debug logging for rapid development.
